@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Agora Certificate Day 1</title>
+        <link rel="stylesheet" href="HW2_Calc.css"/>
+    </head>
+
+    <body id="container">
+        <input id="val1" placeholder="Value 1"/>
+        <input id="val2" placeholder="Value 2"/>
+        <button id="add" onclick="add()">Add</button>
+        <button id="sub" onclick="sub()">Subtract</button>
+        <button id="mult" onclick="mult()">Multiply</button>
+        <button id="div" onclick="div()">Divide</button>
+        <input id="result" placeholder="Result"/>
+        
+    <script>
+        function add(){
+            let val1 = document.getElementById("val1")
+            let val2 = document.getElementById("val2")
+            document.getElementById("result").value = Number(val1.value)+Number(val2.value)
+        }
+        function sub(){
+            let val1 = document.getElementById("val1")
+            let val2 = document.getElementById("val2")
+            document.getElementById("result").value = Number(val1.value)-Number(val2.value)
+        }
+        function mult(){
+            let val1 = document.getElementById("val1")
+            let val2 = document.getElementById("val2")
+            document.getElementById("result").value = Number(val1.value)*Number(val2.value)
+        }
+        function div(){
+            let val1 = document.getElementById("val1")
+            let val2 = document.getElementById("val2")
+            document.getElementById("result").value = Number(val1.value)/Number(val2.value)
+        }
+
+    </script>
+    </body>
+</html>
